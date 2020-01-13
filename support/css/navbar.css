@@ -1,0 +1,18 @@
+.dropdown-submenu {
+    position: relative;
+  }
+  
+  .dropdown-submenu>a:after {
+    font-family: "Font Awesome 5 Free";
+    font-weight: 900;
+    content: "\f061";
+    float: right;
+    border: none;
+  }
+  
+  .dropdown-submenu>.dropdown-menu {
+    top: 0;
+    left: 100%;
+    margin-top: 0px;
+    margin-left: 0px;
+  }

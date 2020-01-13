@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset='utf-8'>
+  <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+  <title>Tạo Người Dùng</title>
+  <meta name='viewport' content='width=device-width, initial-scale=1'>
+  <link rel="stylesheet" type="text/css" href="support/source/bootstrap-4.3.1-dist/css/bootstrap.min.css">
+  <link rel="stylesheet" type="text/css" href="support/source/fontawesome-free-5.12.0-web/css/all.css">
+  <link rel="stylesheet" type="text/css" href="support/css/main.css">
+  <link rel="stylesheet" type="text/css" href="support/css/navbar.css">
+<body>
+  <header>
+    <nav class="navbar navbar-dark bg-dark navbar-expand-lg">
+      <div class="container">
+        <a href="#" class="navbar-brand font-weight-bold">Quản Lý</a>
+        <button type="button" data-toggle="collapse" data-target="#navbarContent" 
+          aria-controls="navbars" aria-expanded="false" 
+          aria-label="Toggle navigation" class="navbar-toggler">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+
+        <div id="navbarContent" class="collapse navbar-collapse">
+          <ul class="navbar-nav mr-auto">
+            <!-- Level one dropdown -->
+            <li class="nav-item dropdown">
+              <a id="functionMenu" href="#" data-toggle="dropdown" aria-haspopup="true" 
+                aria-expanded="false" class="nav-link dropdown-toggle">
+                Chức Năng
+              </a>
+              <ul aria-labelledby="functionMenu" class="dropdown-menu border-0 shadow">
+                <li><a href="#" class="dropdown-item">Nhập Sinh </a></li>
+                <li class="dropdown-divider"></li>
+                <!-- Level two dropdown-->
+                <li class="dropdown-submenu">
+                  <a id="functionMenuDead" role="button" data-toggle="dropdown" 
+                    aria-haspopup="true" aria-expanded="false" class="dropdown-item dropdown-toggle">
+                    Chết
+                  </a>
+                  <ul aria-labelledby="functionMenuDead" class="dropdown-menu border-0 shadow">
+                    <li>
+                      <a tabindex="-1" href="#" class="dropdown-item">Thành Viên Chết</a>
+                    </li>
+                    <li>
+                      <a href="#" class="dropdown-item">Chủ Hộ Đơn Thân Chết</a>
+                    </li>
+                    <li>
+                      <a href="#" class="dropdown-item">Chủ Hộ Chết</a>
+                    </li>
+                  </ul>
+                </li>
+                <!-- End Level two -->
+                <!-- Level two dropdown-->
+                <li class="dropdown-submenu">
+                  <a id="functionMenuTranfer" role="button" data-toggle="dropdown" 
+                    aria-haspopup="true" aria-expanded="false" class="dropdown-item dropdown-toggle">
+                    Chuyển Đến
+                  </a>
+                  <ul aria-labelledby="functionMenuTranfer" class="dropdown-menu border-0 shadow">
+                    <li>
+                      <a tabindex="-1" href="#" class="dropdown-item">Chuyển Đến Từ Trong Xã</a>
+                    </li>
+                    <li>
+                      <a tabindex="-1" href="#" class="dropdown-item">Chuyển Đến Từ Ngoài Xã</a>
+                    </li>
+                    <li>
+                      <a tabindex="-1" href="#" class="dropdown-item">Chuyển Đến Từ Ngoài Huyện</a>
+                    </li>
+                    <li>
+                      <a tabindex="-1" href="#" class="dropdown-item">Chuyển Đến Từ Ngoài Tỉnh</a>
+                    </li>
+                    <li>
+                      <a tabindex="-1" href="#" class="dropdown-item">Hộ Chuyển Đến</a>
+                    </li>
+                  </ul>
+                </li>
+                <!-- End Level two -->
+                <!-- Level two dropdown-->
+                <li class="dropdown-submenu">
+                  <a id="functionMenuMove" role="button" data-toggle="dropdown" 
+                    aria-haspopup="true" aria-expanded="false" class="dropdown-item dropdown-toggle">
+                    Chuyển Đi
+                  </a>
+                  <ul aria-labelledby="functionMenuMove" class="dropdown-menu border-0 shadow">
+                    <li>
+                      <a tabindex="-1" href="#" class="dropdown-item">CHuyển Đi Trong Xã</a>
+                    </li>
+                    <li>
+                      <a tabindex="-1" href="#" class="dropdown-item">CHuyển Đi Ngoài Xã</a>
+                    </li>
+                    <li>
+                      <a tabindex="-1" href="#" class="dropdown-item">CHuyển Đi Ngoài Huyện</a>
+                    </li>
+                    <li>
+                      <a tabindex="-1" href="#" class="dropdown-item">CHuyển Đi Ngoài Tỉnh</a>
+                    </li>
+                    <li>
+                      <a tabindex="-1" href="#" class="dropdown-item">Hộ Chuyển Đi</a>
+                    </li>
+                  </ul>
+                </li>
+                <!-- End Level two -->
+                <!-- Level two dropdown-->
+                <li class="dropdown-submenu">
+                  <a id="functionMenuSplit" role="button" data-toggle="dropdown" 
+                    aria-haspopup="true" aria-expanded="false" class="dropdown-item dropdown-toggle">
+                    Tách Hộ
+                  </a>
+                  <ul aria-labelledby="functionMenuSplit" class="dropdown-menu border-0 shadow">
+                    <li>
+                      <a tabindex="-1" href="#" class="dropdown-item">Tách Từ Một Hộ</a>
+                    </li>
+                    <li>
+                      <a tabindex="-1" href="#" class="dropdown-item">Tách Từ Hai Hộ</a>
+                    </li>
+                    <li>
+                      <a tabindex="-1" href="#" class="dropdown-item">Tách Từ Ba Hộ</a>
+                    </li>
+                  </ul>
+                </li>
+                <!-- End Level two -->
+                <!-- Level two dropdown-->
+                <li class="dropdown-submenu">
+                  <a id="functionMenuFamily" role="button" data-toggle="dropdown" 
+                    aria-haspopup="true" aria-expanded="false" class="dropdown-item dropdown-toggle">
+                    Sổ Hộ Khẩu
+                  </a>
+                  <ul aria-labelledby="functionMenuFamily" class="dropdown-menu border-0 shadow">
+                    <li>
+                      <a tabindex="-1" href="#" class="dropdown-item">Cấp Lại Sổ Hộ Khẩu</a>
+                    </li>
+                    <li>
+                      <a tabindex="-1" href="#" class="dropdown-item">Cấp Đổi Sổ Hộ Khẩu</a>
+                    </li>
+                    <li>
+                      <a tabindex="-1" href="#" class="dropdown-item">Điều Chỉnh Sổ Hộ Khẩu</a>
+                    </li>
+                  </ul>
+                </li>
+                <!-- End Level two -->
+              </ul>
+            </li>
+            <!-- End Level one -->
+
+            <li class="nav-item dropdown">
+              <a id="functionStatistical" href="#" data-toggle="dropdown" aria-haspopup="true" 
+                aria-expanded="false" class="nav-link dropdown-toggle">
+                Thống Kê
+              </a>
+              <ul aria-labelledby="functionStatistical" class="dropdown-menu border-0 shadow">
+                <li><a href="#" class="dropdown-item">Thống Kê Theo Mẫu HK15 </a></li>
+                <li class="dropdown-divider"></li>
+                <!-- Level two dropdown-->
+                <li class="dropdown-submenu">
+                  <a id="functionStatisticalRequest" role="button" data-toggle="dropdown" 
+                    aria-haspopup="true" aria-expanded="false" class="dropdown-item dropdown-toggle">
+                    Thống Kê Theo Yêu Cầu
+                  </a>
+                  <ul aria-labelledby="functionStatisticalRequest" class="dropdown-menu border-0 shadow">
+                    <li>
+                      <a tabindex="-1" href="#" class="dropdown-item">Thống Kê Theo Tuổi</a>
+                    </li>
+                    <li>
+                      <a href="#" class="dropdown-item">Thống Kê Nam Theo Tuổi</a>
+                    </li>
+                    <li>
+                      <a href="#" class="dropdown-item">Thống Kê Theo Dân Tộc</a>
+                    </li>
+                    <li>
+                      <a href="#" class="dropdown-item">Thống Kê Theo Tôn Giáo</a>
+                    </li>
+                  </ul>
+                </li>
+                <!-- End Level two -->
+              </ul>
+            </li>
+            <li class="nav-item dropdown">
+              <a id="functionAccount" href="#" data-toggle="dropdown" aria-haspopup="true" 
+                aria-expanded="false" class="nav-link dropdown-toggle">
+                Tài Khoản
+              </a>
+              <ul aria-labelledby="functionAccount" class="dropdown-menu border-0 shadow">
+                <li><a href="#" class="dropdown-item">Đăng Ký Tài Khoản </a></li>
+                <li><a href="#" class="dropdown-item">Đổi Mật Khẩu </a></li>
+                <li class="dropdown-divider"></li>
+                <li><a href="#" class="dropdown-item">Đăng Xuất </a></li>
+              </ul>
+            </li>
+            <li class="nav-item"><a href="#" class="nav-link">Contact</a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </header>
+  <section class="container">
+    <article>
+        <h1>Tạo Người Dùng</h1>
+        <div class="row">
+            <div class="col-md-6 col">
+                <form>
+                    <div class="form-group">
+                        <label for="inputUserName">Tên Đăng Nhập</label>
+                        <input type="text" class="form-control" id="inputUserName" placeholder="Nhập Tên Đăng Nhập">
+                    </div>
+                    <div class="form-group">
+                        <label for="inputFullName">Họ Tên</label>
+                        <input type="text" class="form-control" id="inputFullName" placeholder="Nhập Họ Và Tên">
+                    </div>
+                    <div class="form-group">
+                        <label for="inputPosition">Chức Vụ</label>
+                        <input type="email" class="form-control" id="inputPosition" placeholder="Nhập Chức Vụ">
+                    </div>
+                    <div class="form-group">
+                        <label for="inputImage">Ảnh</label>
+                        <input type="file" class="form-control-file" id="inputImage" placeholder="Nhập Ảnh">
+                    </div>
+                    <button type="submit" class="btn btn-primary mb-2">Đăng Ký</button>
+                </form>
+            </div>
+            <div class="col-md-6 col message">
+                <p>Mật Khẩu Mặc Định là: 123456</p>
+                <p>Sau khi nhận tài khoản phải lập tức đổi mật khẩu</p>
+            </div>
+        </div>
+    </article>
+  </section>
+  <footer>
+    <div>
+      Thực Hiện Bởi
+    </div>
+  </footer>
+
+  <script src="support/source/jquery/jquery-3.4.1.min.js"></script>
+  <script src="support/source/bootstrap-4.3.1-dist/js/bootstrap.bundle.min.js"></script>
+  <script src="support/source/bootstrap-4.3.1-dist/js/bootstrap.min.js"></script>
+  <script src="support/js/navbar.js"></script>
+</body>
+</html>

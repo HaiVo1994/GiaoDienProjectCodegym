@@ -1,0 +1,26 @@
+body{
+    background-color: gray;
+}
+
+section{
+    background-color: azure;
+}
+footer{
+    background-color: rgb(58, 58, 58);
+    color: whitesmoke;
+    text-align: center;
+}
+h1,h2,h3,h4,h5{
+    text-align: center;
+}
+#search{
+    float: right;
+}
+/* #search > input{
+    width:;
+} */
+
+div.message{
+    background-color: rgb(211, 207, 207);
+    color: red;
+}
