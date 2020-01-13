@@ -3,7 +3,7 @@
 <head>
   <meta charset='utf-8'>
   <meta http-equiv='X-UA-Compatible' content='IE=edge'>
-  <title>Tạo Nhân Khẩu</title>
+  <title>Chuyển Đến Từ Ngoài Xã</title>
   <meta name='viewport' content='width=device-width, initial-scale=1'>
   <link rel="stylesheet" type="text/css" href="support/source/bootstrap-4.3.1-dist/css/bootstrap.min.css">
   <link rel="stylesheet" type="text/css" href="support/source/fontawesome-free-5.12.0-web/css/all.css">
@@ -195,9 +195,56 @@
   </header>
   <section class="container">
     <article>
-        <h1>Tạo Nhân Khẩu</h1>
+        <h3>Chuyển Đến Từ Ngoài Xã</h3>
         <div class="row">
+            
             <div class="container-fluid">
+                <form>
+                    <div class="form-row">
+                        <div class="form-group col-md-4 col">
+                            <label for="InputFamily">Số Hồ Sơ Hộ Khẩu</label>
+                            <input type="text" class="form-control" id="InputFamily">
+                        </div>
+                        <div class="form-group col-md-4 col">
+                            <label for="InputGoodman">Chủ Hộ</label>
+                            <select class="form-control" id="InputGoodman">
+                            </select>
+                        </div>
+                        <div class="form-group col-md-4 col">
+                            <label for="InputNumberPeople">Số Người</label>
+                            <input type="number" class="form-control" id="InputNumberPeople">
+                        </div>
+                    </div>
+                    <div class="form-row">
+                        <div class="form-group col-md-4 col">
+                            <label for="InputDistrict">Tỉnh</label>
+                            <select class="form-control" id="InputDistrict">
+                            </select>
+                        </div>
+                        <div class="form-group col-md-4 col">
+                            <label for="InputDistrict">Huyện</label>
+                            <select class="form-control" id="InputDistrict">
+                            </select>
+                        </div>
+                        <div class="form-group col-md-4 col">
+                            <label for="InputVillage">Xã</label>
+                            <select class="form-control" id="InputVillage">
+                            </select>
+                        </div>
+                    </div>
+                    <div class="form-row">
+                        <button type="submit" class="btn btn-primary mb-2">Khởi Tạo</button>
+                    </div>
+                    <div>
+                        <p>Chuyển đến từ ngoài xã thì Tỉnh và Huyện Cố Định, ẩn xã của mình</p>
+                        <p>Chuyển đến từ ngoài huyện trong Tỉnh thì cố định Tỉnh và ẩn huyện của mình</p>
+                        <p>Chuyển đến từ ngoài Tỉnh thì ẩn Tỉnh của mình</p>
+                    </div>
+                </form>
+            </div>
+
+            <div class="container-fluid">
+                <h3>Tạo Nhân Khẩu</h3>
                 <form>
                     <div class="form-row">
                         <div class="form-group col-md-6 col">
@@ -296,18 +343,18 @@
                           <input type="text" class="form-control" id="InputPhone">
                       </div>
                     </div>
-                    <button type="submit" class="btn btn-primary mb-2">Đăng Ký</button>
-                    <button type="button" class="btn btn-secondary mb-2">Hộ Tiếp Theo</button>
+                    <div class="form-row">
+                        <div class="form-group col-md-8 col">
+                            <label for="InputRelationWithPeoleChange">Quan Hệ Với Người Có Thay Đổi</label>
+                            <select class="form-control" id="InputRelationWithPeoleChange">
+                            </select>
+                        </div>
+                    </div>
+                    <button type="submit" class="btn btn-primary mb-2">Tạo Nhân Khẩu</button>
                 </form>
             </div>
+
             <div class="container-fluid">
-              <div class="row">
-                <div class="col-4 float-right my-3">
-                  <form id="search">
-                    <input type="text" class="form-control" placeholder="Tìm Kiếm Chủ Hộ">
-                  </form>
-                </div>
-              </div>
               <table class="table">
                 <thead class="table-primary">
                     <tr>
